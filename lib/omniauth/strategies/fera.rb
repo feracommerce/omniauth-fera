@@ -8,7 +8,8 @@ module OmniAuth
 
       option :setup, proc { |env|
         request = Rack::Request.new(env)
-        request.env['omniauth.params'] = env['omniauth.params'].to_h.merge(request.GET.slice('shop', 'store', 'id', 'public_key', 'store_pk', 'store_public_key', 'pk', 'store_id', 'shop_id'))
+        allowed_get_params = request.GET.slice('shop', 'store', 'id', 'public_key', 'store_pk', 'store_public_key', 'pk', 'store_id', 'shop_id')
+        request.env['omniauth.params'] = env['omniauth.params'].to_h.merge(allowed_get_params)
       }
 
       def callback_url
