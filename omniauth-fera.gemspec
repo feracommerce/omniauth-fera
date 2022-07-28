@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Fera Commerce Inc"]
   spec.email         = ["developers@fera.ai"]
 
-  spec.summary       = "Omniauth strategy for Fera apps."
-  spec.description   = "Omniauth strategy for Fera apps."
+  spec.summary       = "OmniAuth strategy for Fera apps."
+  spec.description   = "OmniAuth strategy for Fera apps."
   spec.homepage      = "https://www.fera.ai"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
@@ -19,7 +19,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   spec.require_paths = ['lib']
-  spec.required_ruby_version = '>= 2.1.9'
+
+
+  spec.add_dependency "bundler", ">= 1.15.0"
 
   spec.add_runtime_dependency 'omniauth-oauth2', '~> 1'
   spec.add_runtime_dependency 'activesupport'
