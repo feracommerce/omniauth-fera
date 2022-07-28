@@ -25,8 +25,5 @@ jobs:
           bundle config set without 'default doc job cable storage ujs test db'
           bundle install --jobs 4 --retry 3
           gem install rubocop
-          gem install brakeman
-      - name: Brakeman
-        run: brakeman
       - name: Rubocop
         run: rubocop --parallel

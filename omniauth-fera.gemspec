@@ -23,7 +23,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "bundler", ">= 1.15.0"
 
-  spec.add_runtime_dependency 'omniauth-oauth2', '~> 1'
+  spec.add_runtime_dependency 'omniauth', '>= 1.9'
+  spec.add_runtime_dependency 'omniauth-oauth2', '>= 1'
   spec.add_runtime_dependency 'activesupport'
 end
 
