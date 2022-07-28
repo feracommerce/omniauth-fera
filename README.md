@@ -1,6 +1,8 @@
-# Omniauth::Fera
+[![Checks](https://github.com/feracommerce/omniauth-fera/actions/workflows/checks.yml/badge.svg?branch=master)](https://github.com/feracommerce/omniauth-fera/actions/workflows/checks.yml)
 
-This gem adds the omniauth authentication strategy for [Fera Partner Apps](https://partners.fera.ai/partner-portal/apps).
+# Fera OmniAuth Strategy
+
+This gem adds the omniauth authentication strategy using the oauth2 method for [Fera Partner Apps](https://partners.fera.ai/partner-portal/apps).
 
 To authenticate your partner app on your own follow the instructions in [our developer docs here](https://developers.fera.ai/docs/partners-app-authentication).
 
